@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#4F76C3",
+              "primary-dark": "#365289",
+              neutral: {
+                white: "#FFFFFF",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      * {
+        transition: all 0.15s ease-in-out;
+      }
+    </style>
+  </head>
+  <body class="flex items-center justify-center h-screen bg-gray-100">
+    <div
+      class="flex flex-col items-center gap-8 bg-white w-full max-w-xs px-8 pt-6 pb-8 mb-4 shadow-md"
+    >
+      <div id="logo" class="text-center bg-primary w-fit px-4">
+        <h1 class="text-2xl font-bold text-white w-fit">LOGO</h1>
+      </div>
+      <div id="illustration" class="text-center">
+        <div
+          class="w-52 h-52 bg-primary text-white rounded-full flex items-center justify-center mx-auto"
+        >
+          <span class="text-lg">Ilustração</span>
+        </div>
+      </div>
+
+      <form class="rounded flex flex-col gap-6">
+        <label>
+          <input
+            type="email"
+            placeholder="Digite seu email"
+            class="text-primary shadow appearance-none border-2 border-primary rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder:text-primary"
+            required
+          />
+        </label>
+
+        <label class="flex flex-col items-end gap-2">
+          <input
+            type="password"
+            placeholder="Digite sua senha"
+            class="text-primary shadow appearance-none border-2 border-primary rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder:text-primary"
+            required
+          />
+          <a
+            href="#"
+            class="text-primary text-sm hover:underline hover:text-primary-dark"
+            >Esqueci minha senha</a
+          >
+        </label>
+
+        <button
+          type="submit"
+          class="bg-primary text-white font-bold py-2 px-4 rounded w-full focus:outline-none focus:shadow-outline hover:bg-primary-dark active:bg-primary/50"
+        >
+          Login
+        </button>
+      </form>
+
+      <div class="text-center flex items-center gap-6 w-full">
+        <hr class="w-full h-[2px] bg-primary border-0 rounded" />
+        <p class="text-gray-600 font-bold text-primary">OU</p>
+        <hr class="w-full h-[2px] bg-primary border-0 rounded" />
+      </div>
+
+      <a
+        href="#"
+        class="bg-transparent font-bold w-full text-center p-2 text-primary outline-2 hover:outline hover:text-primary-dark"
+        >FAÇA SEU CADASTRO</a
+      >
+    </div>
+  </body>
+</html>
